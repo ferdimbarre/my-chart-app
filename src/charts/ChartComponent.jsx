@@ -26,7 +26,6 @@ return () => {
   };
 
 }, [type, data, options]);
-return <canvas ref={chartRef}></canvas>;
+return <canvas ref={chartRef}></canvas>; }
 export default ChartComponent;
-
 
