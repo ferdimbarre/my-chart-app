@@ -26,6 +26,6 @@ return () => {
   };
 
 }, [type, data, options]);
-return <canvas ref={chartRef}></canvas>; }
+return <canvas ref={chartRef}></canvas>;  } //is this parenthesis here?
 export default ChartComponent;
 
