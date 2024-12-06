@@ -5,21 +5,12 @@ const ScatterPlot = ({ data }) => {
      
       datasets: [
         {
-          label: 'Expenses',
-          data: data.expenses.map((expense, index) => ({
-            x: expense,
-            y: data.profits[index],
-          })),
-          backgroundColor: 'rgba(255, 99, 132, 0.2)', //will make expenses appear in pink
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 1,
-        }, {
-            label: 'Profits',
+            label: 'Expenses vs Profits',
             data: data.expenses.map((expense, index) => ({
-                x: expense,
-                y: data.profits[index],
-              })), 
-            backgroundColor: 'rgba(54, 162, 235, 0.2)', //will make profits appear in blue 
+              x: expense,
+              y: data.profits[index],
+            })),
+            backgroundColor: 'rgba(54, 162, 235, 0.2)', // will display in blue
             borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1,
         }
