@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import BarChart from './charts/BarChart';
+import BarChart from './components/BarChart';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css';
@@ -22,9 +22,9 @@ function App() {
       <div style={{ textAlign: 'center' }}>
         <h1>Dynamic Charts with React and Chart.js</h1>
         <BarChart data={chartData} />
-        <LineChart data={chartData} />
+       {/* <LineChart data={chartData} />
         <ScatterChart data={chartData} />
-        <BubbleChart data={chartData} />
+        <BubbleChart data={chartData} /> */}
       </div>
     );
 }

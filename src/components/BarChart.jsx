@@ -1,4 +1,5 @@
-import ChartComponent from 'ChartComponent.jsx'
+import ChartComponent from './ChartComponent';
+
 const BarChart = ({ data }) => {
     const barChartData = {
       labels: data.months,
