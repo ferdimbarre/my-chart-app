@@ -21,8 +21,8 @@ const BubbleChart = ({ data }) => {
               y: data.profits[index],
               r: bubbleSize(data.sales[index]),
             })),
-            backgroundColor: 'rgba(54, 162, 235, 0.2)', // will display in blue
-            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: 'rgba(255, 105, 180, 0.2)', // will display in pink
+            borderColor: 'rgba(255, 105, 180, 1)',
             borderWidth: 1,
         }
       ],
@@ -34,14 +34,14 @@ x: {
     display: true,
    text: 'Expenses',
               },
-              beginAtZero: true,
+              beginAtZero: false,
             },
 y: {
    title: {
     display: true,
     text: 'Profits',
               },
-              beginAtZero: true,
+              beginAtZero: false,
             },
           },
         };
