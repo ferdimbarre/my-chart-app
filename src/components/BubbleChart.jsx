@@ -50,3 +50,5 @@ y: {
     };
 
  export default BubbleChart
+
+ // need to adjust so it doesnt begin at zero, change color and get a sales tag 

@@ -25,3 +25,5 @@ const LineChart = ({ data }) => {
     };
 
  export default LineChart
+
+ //change the color 

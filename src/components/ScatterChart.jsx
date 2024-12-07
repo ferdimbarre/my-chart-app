@@ -23,14 +23,14 @@ x: {
     display: true,
    text: 'Expenses',
               },
-              beginAtZero: true,
+              beginAtZero: false,
             },
 y: {
    title: {
     display: true,
     text: 'Profits',
               },
-              beginAtZero: true,
+              beginAtZero: false,
             },
           },
         };
@@ -39,3 +39,5 @@ y: {
     };
 
  export default ScatterPlot
+
+ //need to adjust so doesnt begin at zero and adjust the scale a bit 
