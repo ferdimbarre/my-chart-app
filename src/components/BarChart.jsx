@@ -8,8 +8,8 @@ const BarChart = ({ data }) => {
         {
           label: 'Monthly Sales',
           data: data.sales,// sales in the axis
-          backgroundColor: 'rgba(255, 255, 0, 0.2)', //will display yellow
-          borderColor: 'rgba(255, 255, 0, 1)',
+          backgroundColor: 'rgba(128, 0, 128, 0.2)', //will display purple
+          borderColor: 'rgba(128, 0, 128, 1)',
           borderWidth: 1,
         },
       ],
