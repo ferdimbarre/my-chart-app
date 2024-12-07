@@ -1,4 +1,5 @@
 import ChartComponent from './ChartComponent';
+//create a line chart displaying monthly profits
 
 const LineChart = ({ data }) => {
     const lineChartData = {
@@ -6,8 +7,8 @@ const LineChart = ({ data }) => {
       datasets: [
         {
           label: 'Monthly Profits',
-          data: data.profits,
-          backgroundColor: 'rgba(83, 20, 141, 0.2)',
+          data: data.profits, //displays profits in the axis
+          backgroundColor: 'rgba(83, 20, 141, 0.2)', //displays aquamarine
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
         },
@@ -16,7 +17,7 @@ const LineChart = ({ data }) => {
     const lineChartOptions = {
         scales: {
           y: {
-            beginAtZero: true,
+            beginAtZero: true, //scaling
           },
         },
       };

@@ -1,4 +1,5 @@
 import ChartComponent from './ChartComponent';
+//create a bar chart displaying monthly sales
 
 const BarChart = ({ data }) => {
     const barChartData = {
@@ -6,9 +7,9 @@ const BarChart = ({ data }) => {
       datasets: [
         {
           label: 'Monthly Sales',
-          data: data.sales,
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          borderColor: 'rgba(75, 192, 192, 1)',
+          data: data.sales,// sales in the axis
+          backgroundColor: 'rgba(255, 255, 0, 0.2)', //will display yellow
+          borderColor: 'rgba(255, 255, 0, 1)',
           borderWidth: 1,
         },
       ],
@@ -16,7 +17,7 @@ const BarChart = ({ data }) => {
     const barChartOptions = {
         scales: {
           y: {
-            beginAtZero: true,
+            beginAtZero: true, //scaling
           },
         },
       };

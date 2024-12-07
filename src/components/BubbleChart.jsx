@@ -1,5 +1,5 @@
 import ChartComponent from './ChartComponent';
-
+//create a bubble chart displaying expenses, profits and scaling according to sales
 const BubbleChart = ({ data }) => {
     const maxSales = Math.max(...data.sales); //getting the sizes to be able to scale 
     const minSales = Math.min(...data.sales);
@@ -8,7 +8,7 @@ const BubbleChart = ({ data }) => {
        let maxSize = 25; // Max size
         return (
           minSize +
-          ((sale - minSales) / (maxSales - minSales)) * (maxSize - minSize)
+          ((sale - minSales) / (maxSales - minSales)) * (maxSize - minSize) 
         );
       };
     const bubbleChartData = {
@@ -34,7 +34,7 @@ x: {
     display: true,
    text: 'Expenses',
               },
-              beginAtZero: false,
+              beginAtZero: false, //scaling
             },
 y: {
    title: {

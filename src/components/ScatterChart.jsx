@@ -1,5 +1,5 @@
 import ChartComponent from './ChartComponent';
-
+//create a scatter chart displaying expenses and profits
 const ScatterPlot = ({ data }) => {
     const scatterPlotData = {
      
@@ -8,7 +8,7 @@ const ScatterPlot = ({ data }) => {
             label: 'Expenses vs Profits',
             data: data.expenses.map((expense, index) => ({
               x: expense,
-              y: data.profits[index],
+              y: data.profits[index], //expense and profit axis
             })),
             backgroundColor: 'rgba(54, 162, 235, 0.2)', // will display in blue
             borderColor: 'rgba(54, 162, 235, 1)',
@@ -23,7 +23,7 @@ x: {
     display: true,
    text: 'Expenses',
               },
-              beginAtZero: false,
+              beginAtZero: false, //scaling to make more sense in the graph
             },
 y: {
    title: {
